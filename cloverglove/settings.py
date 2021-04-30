@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-__+7s2f^4tid8o$qbj#k$lv+@izrr=u&ah)3dle^4@bklvd41&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['139.162.63.99', 'li1476-99.members.linode.com', 'http://cloverglove.co.th']
-
+# ALLOWED_HOSTS = ['127.0.0.1:8000', '139.162.63.99', 'li1476-99.members.linode.com', 'http://cloverglove.co.th']
+ALLOwED_HOSTS =['*']
 
 # Application definition
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-
+    'sssoon',
     'apps.category',
 ]
 
